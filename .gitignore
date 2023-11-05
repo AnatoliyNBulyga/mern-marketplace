@@ -1,0 +1,12 @@
+# client
+/client/node_modules
+/client/build
+/client/dist
+/client/.env
+
+/server/node_modules
+/server/build
+/server/dist
+/server/.env
+
+.idea
