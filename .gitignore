@@ -4,9 +4,10 @@
 /client/dist
 /client/.env
 
-/server/node_modules
-/server/build
-/server/dist
-/server/.env
+# api
+node_modules
+build
+dist
+.env
 
 .idea
