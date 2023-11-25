@@ -5,6 +5,7 @@ import SignInPage from "./pages/SignIn.jsx";
 import SignOutPage from "./pages/SignUp.jsx";
 import Profile from "./pages/Profile.jsx";
 import Header from "./components/Header.jsx";
+import PrivateRoute from "./components/PrivateRoute.jsx";
 
 const App = () => {
     return (
@@ -13,9 +14,11 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/profile" element={<Profile />} />
                 <Route path="/sign-in" element={<SignInPage />} />
                 <Route path="/sign-up" element={<SignOutPage />} />
+                <Route element={<PrivateRoute />}>
+                    <Route path="/profile" element={<Profile />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     );
